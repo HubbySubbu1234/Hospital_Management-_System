@@ -1,6 +1,6 @@
 {
   "name": "Hospital Management Dev",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",  // Python + Docker base
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
@@ -8,7 +8,7 @@
     }
   },
 
-  "postCreateCommand": "pip install -r backend/requirements.txt",
+  "postCreateCommand": "./start-dev.sh",
 
   "customizations": {
     "vscode": {
