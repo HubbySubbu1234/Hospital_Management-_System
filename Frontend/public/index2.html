@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Hospital Management System</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="../assets/images/Dental_Banner.jpg" alt="Dental Banner" class="banner-img" />
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome to our Dental Practice</h2>
+    <p>Streamlining appointments, billing, patient care and more — all in one place.</p>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+  <script>
+    fetch('../components/header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
+</body>
+</html>
+
